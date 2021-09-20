@@ -1,10 +1,20 @@
 package com.beers.punk.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.Arrays;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Ingredients {
 
     private Malt[] malt;
+    private Hops[] hops;
+    private String yeast;
+
 
     @Override
     public String toString() {
@@ -14,35 +24,5 @@ public class Ingredients {
                 ", yeast='" + yeast + '\'' +
                 '}';
     }
-
-    public Malt[] getMalt() {
-        return malt;
-    }
-
-    public void setMalt(Malt[] malt) {
-        this.malt = malt;
-    }
-
-    public Hops[] getHops() {
-        return hops;
-    }
-
-    public void setHops(Hops[] hops) {
-        this.hops = hops;
-    }
-
-    public String getYeast() {
-        return yeast;
-    }
-
-    public void setYeast(String yeast) {
-        this.yeast = yeast;
-    }
-
-    public Ingredients() {
-    }
-
-    private Hops[] hops;
-    private String yeast;
 
 }

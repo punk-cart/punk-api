@@ -1,5 +1,12 @@
 package com.beers.punk.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class MashTemp {
 
     private Temp temp;
@@ -13,22 +20,4 @@ public class MashTemp {
                 '}';
     }
 
-    public Temp getTemp() {
-        return temp;
-    }
-
-    public void setTemp(Temp temp) {
-        this.temp = temp;
-    }
-
-    public double getDuration() {
-        return duration;
-    }
-
-    public void setDuration(double duration) {
-        this.duration = duration;
-    }
-
-    public MashTemp() {
-    }
 }

@@ -1,8 +1,15 @@
 package com.beers.punk.model;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.Arrays;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Method {
 
     private MashTemp[] mashTemp;
@@ -18,30 +25,5 @@ public class Method {
                 '}';
     }
 
-    public MashTemp[] getMashTemp() {
-        return mashTemp;
-    }
 
-    public void setMashTemp(MashTemp[] mashTemp) {
-        this.mashTemp = mashTemp;
-    }
-
-    public Fermentation getFermentation() {
-        return fermentation;
-    }
-
-    public void setFermentation(Fermentation fermentation) {
-        this.fermentation = fermentation;
-    }
-
-    public Object getTwist() {
-        return twist;
-    }
-
-    public void setTwist(Object twist) {
-        this.twist = twist;
-    }
-
-    public Method() {
-    }
 }
